@@ -11,7 +11,7 @@
 <body>
 
     <h2>Formulario postulacion</h2>
-<form id="miFormulario" onsubmit="return validarFormulario()">
+<form id="miFormulario" onsubmit="return validarFormulario() ">
   <label for="nombre">Nombre:</label>
   <input type="text" id="nombre" name="nombre"><br>
   <br>
@@ -52,8 +52,10 @@
 
 
   <button type="submit">Enviar</button>
-  <button type="submit" onclick="generarCarta()">crear carta </button>
-  <textarea id="carta" ></textarea>
+
+  <button type="button" onclick="generarCarta()">crear carta </button><br>
+  <br>
+  <textarea id="carta" rows="10" cols="50"></textarea>
 </form>
 
 

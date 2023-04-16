@@ -13,7 +13,7 @@ function generarCarta() {
     const motivacion = document.getElementById("motivacion").value;
   
     // Concatenar los datos en un string correspondiente a la carta
-    const carta = `Estimado(a) reclutador(a),
+    const carta1 = `Estimado(a) reclutador(a),
   
   Me dirijo a usted para postular al trabajo de apoyo ambiental en Chiloé.
   
@@ -27,5 +27,5 @@ function generarCarta() {
   ${nombre} ${apellidop} ${apellidom}`;
   
     // Asignar la carta al campo de texto correspondiente
-    document.getElementById("carta").value = carta;
+    document.getElementById("carta").innerHTML = carta1;
   }
