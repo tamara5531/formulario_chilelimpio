@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="CSS/estilo.css">
+    <title> form validation</title>
+    <style>
+    </style>
+</head>
+<body>
+
+    <h2>Formulario postulacion</h2>
+<form id="miFormulario" onsubmit="return validarFormulario()">
+  <label for="nombre">Nombre:</label>
+  <input type="text" id="nombre" name="nombre"><br>
+  <br>
+  <label for="apellidop">Apellido Paterno:</label>
+  <input type="text" id="apellidop" name="apellidop"><br>
+  <br>
+  <label for="apellidom">Apellido Materno:</label>
+  <input type="text" id="apellidom" name="apellidom"><br>
+  <br>
+  <label for ="rut" >Rut</label>
+  <input type ="number" id = 'rut' name="rut"><br>
+  <br>
+  <label for ="Fecha" >Fecha de nacimiento:</label>
+  <input type ="date" id = 'Fecha'><br>
+  <br>
+  <label for="edad">Edad:</label>
+  <input type ="number" id="edad"> <br>
+  <br>
+  <label for ="Genero" >Genero:</label>
+  <select id="seleccion">
+    <option value="">Selecciona una opción...</option>
+    <option value="Femenino">Femenino</option>
+    <option value="Masculino">Masculino</option>
+    <option value="Otro">Otro</option>
+  </select><br>
+   <br>
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email"><br>
+   <br>
+  <label for="celular">Celular:</label>
+  <input type="number" id="celular" name="celular"><br>
+  <br>
+  <label for ="Profesion" >Profesion:</label>
+  <input type ="text" id = 'Profesion' name="profesion" required><br>
+  <br>
+  <label for ="motivacion" >Motivacion para postular :</label><br>
+  <textarea id="motivacion"></textarea required><br>
+
+
+  <button type="submit">Enviar</button>
+  <button type="submit" onclick="generarCarta()">crear carta </button>
+  <textarea id="carta" ></textarea>
+</form>
+
+
+<script src = "./app.js"></script>
+<script src = "./carta.js"></script>
+
+</body>
+</html>
